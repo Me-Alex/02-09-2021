@@ -1,13 +1,14 @@
 :root{
     --bg-container: rgb(27, 27, 27);
-    --p-color: black;
+    --p-color: rgb(255, 255, 255);
     --h5-color: red;
-    --a-text-color:red;
+    --h1-bg-color:rgb(0, 0, 0);
+    --h1-color: rgb(110, 110, 110);
+    --a-text-color:rgb(252, 0, 0);
     --a-text-color-hover:rgb(255, 255, 255);
-    --container-h1-color: rgb(255, 255, 255);
-    --color-span: rgb(13, 134, 23);
+    --color-span: rgb(44, 22, 172);
     --text-color: #ffffff;
-    --button-color-text: rgb(0, 0, 0);
+    --button-color-text: rgb(255, 255, 255);
     --button-color-text-hover: rgb(255, 255, 255);
     --button-border-color: rgb(197, 197, 197);
     --button-border-color-hover: rgb(0, 0, 0);

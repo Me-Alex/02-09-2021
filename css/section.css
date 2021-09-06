@@ -5,12 +5,14 @@
     background-size: cover;
     opacity: 0.9;
     width: 100vw;
+    height: max-content;
     /* height: 2000px; */
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
+    position: relative;
 }
 
 .nav {
@@ -34,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .content h1 {

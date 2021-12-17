@@ -1,21 +1,20 @@
 .section {
-    background-image: url("../img/magician-shuffling-cards-cool-way-spotlight.jpg");
+    /* background-image: url("../img/magician-shuffling-cards-cool-way-spotlight.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: cover; */
     opacity: 0.9;
     width: 100vw;
-    height: max-content;
-    /* height: 2000px; */
+    height:100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    position: relative;
 }
 
 .nav {
+    position: fixed;
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -25,12 +24,13 @@
     height: 100vh;
     z-index: 40000;
     transition: all 2s ease-in;
+    background-color:white;
 }
 
 .content {
     /* background-color:rgb(255, 255, 255); */
     width: 100vw;
-    height: auto;
+    height: 100%;
     opacity: 0.9;
     display: flex;
     flex-direction: column;
@@ -60,13 +60,12 @@
 }
 
 .row h1 {
-    opacity: 0.9;
 }
 
 .click-me-to-show {
     background-color: inherit;
-    /* position: absolute; */
-    top: 0;
+    position: fixed;
+    top: 20%;
     z-index: 1000;
     margin: 0;
     padding: 0;
@@ -75,29 +74,33 @@
 }
 
 .click-me-to-show img {
+    position:absolute;
     width: 50px;
     height: 50px;
 }
 
 .click-me-to-hide {
     /* position: absolute; */
+    display:flex;
     width: 20px;
     background-color: inherit;
     top: 0;
     z-index: 1000;
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    border:0;
+    /* border: 1px solid red; */
     cursor: pointer;
-    color: white;
+    color: rgb(238, 32, 32);
     text-align: center;
     justify-content: center;
+    align-items:center;
 }
 
 .click-me-to-hide:hover {
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgb(197, 73, 73);
     cursor: pointer;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     justify-content: center;
 }

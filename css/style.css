@@ -1,11 +1,20 @@
+html {
+    max-width:4000px;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    max-width:4000px;
     display: flex;
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-x: hidden;
     margin: 0;
+    overflow-x: hidden;
+
 }
 
 body .an {
@@ -212,4 +221,94 @@ footer div h1 {
 
 .social-media a img {
     width: 40px;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+    /* z-index: 100; */
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.hamburger:hover {
+    background-color: red;
+}
+
+.hamburger {
+    width: 80px;
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    border-radius: 50px;
+    background-color: red;
+
+    left: -20px;
+    top: 200px;
+    z-index: 100;
+}
+
+.nav.active {
+    left: 0 !important;
+    display:flex;
+    transition:display 1s ease-in;
+    box-shadow: 0 10px 20px 0;
+}
+
+.header {
+    background: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.some-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.showimg{
+    max-width:1000px;
+    width: auto;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: justify;
+    text-align:justify;
+    padding: 50px;
+
+}
+.showimg img{
+    max-width: 320px;
+    min-width:220px;
+    padding:120px;
+    height: auto;
+}
+.center{
+    text-align:center;
 }

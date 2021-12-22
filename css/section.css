@@ -5,7 +5,7 @@
     background-size: cover; */
     opacity: 0.9;
     width: 100vw;
-    min-height:100vh;
+    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -22,9 +22,10 @@
     gap: 12px;
     width: 20%;
     height: 100vh;
-    z-index: 40000;
-    transition: all 2s ease-in;
-    background-color:white;
+    z-index: 99;
+    transition: all 0.5s ease-in;
+    background-color: white;
+    left: -300px;
 }
 
 .content {
@@ -59,43 +60,43 @@
     flex-direction: column;
 }
 
-.row h1 {
-}
+.row h1 {}
 
 .click-me-to-show {
     background-color: inherit;
     position: absolute;
     top: 50px;
-    left:10px;
+    left: 10px;
     z-index: 1000;
     margin: 0;
     padding: 0;
     border: none;
     cursor: pointer;
+    z-index: 100;
 }
 
 .click-me-to-show img {
-    position:absolute;
+    position: absolute;
     width: 50px;
     height: 50px;
 }
 
 .click-me-to-hide {
     /* position: absolute; */
-    display:flex;
+    display: flex;
     width: 20px;
     background-color: inherit;
     top: 0;
     z-index: 1000;
     margin: 0;
     padding: 0;
-    border:0;
+    border: 0;
     /* border: 1px solid red; */
     cursor: pointer;
     color: rgb(238, 32, 32);
     text-align: center;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .click-me-to-hide:hover {

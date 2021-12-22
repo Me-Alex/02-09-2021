@@ -15,17 +15,25 @@
     .showimg{
         padding: 0;
         flex-direction:column;
+        padding:0;
+    }
+    .showimg img{
+        padding:0;
+        width:auto;
+        height:auto;
     }
     .right-side{
+        width: auto;
         max-width: 400px;
-        
+        min-width: 100px;
         height: auto;
         text-align:justify; ;
-        padding: 0px 0 100px 0;
+        padding:100px;
+        /* padding: 0px 0 100px 0; */
     }
     .right-side h1{
         text-align: justify;
-        font-weight: 10;
+        font-weight: 14;
     }
     .right-side p{
         text-align: justify;
@@ -63,5 +71,13 @@
     .hamburger{
         width:40px;
         left:-10px;
+    }
+    .showimg img{
+        padding:0;
+        width:120px;
+        height:auto;
+    }
+    .right-side {
+        padding:31px;
     }
 }
